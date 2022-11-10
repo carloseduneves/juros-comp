@@ -6,6 +6,7 @@ import Header from './components/Header';
 import casa from './icons/casa.png';
 import carroNovo from './icons/carro-novo.png';
 import money from './icons/money.png';
+//import Spinner from 'react-bootstrap/Spinner';
 //components
 import JurosCarro from './components/JurosCarro.js';
 import JurosCasa from './components/JurosCasa.js';
@@ -126,9 +127,9 @@ const [formulary, setFormulary] = useState(false);
             
 
         </form>}
-        {page === 'car' && interest > 0 &&(<JurosCarro calcInterest={calcInterest} allInterest={allInterest} />)}
-        {page === 'house' && interest > 0 && (<JurosCasa calcInterest={calcInterest} allInterest={allInterest} />)}
-        {page === 'money' && interest > 0 && (<JurosInvest calcInterest={calcInterest} allInterest={allInterest} />)}
+        {page === 'car' && calcInterest > 0 &&(<JurosCarro calcInterest={calcInterest} allInterest={allInterest} />)}
+        {page === 'house' && calcInterest > 0 && (<JurosCasa calcInterest={calcInterest} allInterest={allInterest} />)}
+        {page === 'money' && calcInterest > 0 && (<JurosInvest calcInterest={calcInterest} allInterest={allInterest} />)}
        
       </main>
     </div>
