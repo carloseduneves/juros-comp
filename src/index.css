@@ -97,3 +97,11 @@ img{
   
   
 }
+article{
+  max-width: 700px;
+  margin: auto;
+
+}
+main{
+  padding: 10px;
+}

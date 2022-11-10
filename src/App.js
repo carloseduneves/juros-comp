@@ -66,10 +66,10 @@ const [formulary, setFormulary] = useState(false);
         console.log(allInterest);
         console.log(calculate);
         console.log(totalInterest);
- 
+  
         return;
     }
-  //return to home
+    //return to home
   const returnToHome = () => {
     setPage(stages[0].name);
     setFormulary(false);
@@ -77,43 +77,37 @@ const [formulary, setFormulary] = useState(false);
 
   return (
     <div className="App">
-      <main>
+      
         <header>
           <Navbar bg="light" expand="lg">
               <Container fluid>
               <Navbar.Brand onClick={returnToHome}><h4 style={{cursor: 'pointer'}}>Página inicial</h4></Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
-              <Nav
+            <Nav
               className="me-auto my-2 my-lg-0"
               style={{ maxHeight: '100px' }}
               navbarScroll>
 
-              <Nav.Link onClick={returnToHome}>Home</Nav.Link>
-              <Nav.Link onClick={showHouse}>Calcurar juros sobre imóvel</Nav.Link>
-
-              
-                  <Nav.Link href="#" disabled>
-                      Link
-                  </Nav.Link>
-                  </Nav>
-                  <Form className="d-flex">
-                    <Form.Control
-                      type="search"
-                      placeholder="Search"
-                      className="me-2"
-                      aria-label="Search"/>
-                      <Button variant="outline-success">Search</Button>
-                  </Form>
+              <Nav.Link onClick={showCar}><p>juros sobre veículo</p></Nav.Link>
+              <Nav.Link onClick={showMoney}> <p>juros sobre investimento</p></Nav.Link>
+              <Nav.Link onClick={showHouse}> <p>juros sobre imóvel</p></Nav.Link>
+            </Nav>
+                 
                 </Navbar.Collapse>
               </Container>
             </Navbar>
         </header>
-        <article>
-
-        </article>
+      <main>
         {page === 'start' && <div >
-            <p>Para começar, escolha uma das opções de investimento abaixo:</p>
+          <article>
+            <h1>Calculadora de juros compostos</h1>
+            <h3>o que são juros compostos?</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo facilis harum magnam necessitatibus, nisi vero soluta corrupti atque aperiam dignissimos eaque dolore iusto ratione ad delectus architecto voluptate iure earum.</p>
+            <h3>Para que saber quanto estou pagando de juros?</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rerum veniam mollitia rem voluptas voluptatum asperiores excepturi dolore velit animi! Nesciunt obcaecati animi sint neque sequi, nihil suscipit? Vero, sit?</p>
+              <p>Para começar, escolha uma das opções de investimento abaixo:</p>
+          </article>
             <div className='cards'>
               <div>
                 <Card  className='Card'>
