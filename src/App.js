@@ -89,19 +89,19 @@ const [formulary, setFormulary] = useState(false);
     <div className="App">
       
         <header>
-          <Navbar bg="light" expand="lg">
+          <Navbar expand="lg" className='navbar'>
               <Container fluid>
               <Navbar.Brand onClick={returnToHome}><h4 style={{cursor: 'pointer'}}>Página inicial</h4></Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
+              style={{ maxHeight: '200px' }}
               navbarScroll>
 
-              <Nav.Link onClick={showCar}><p>juros sobre veículo</p></Nav.Link>
-              <Nav.Link onClick={showMoney}> <p>juros sobre investimento</p></Nav.Link>
-              <Nav.Link onClick={showHouse}> <p>juros sobre imóvel</p></Nav.Link>
+              <Nav.Link onClick={showCar}><p className='options'>juros sobre veículo</p></Nav.Link>
+              <Nav.Link onClick={showMoney}> <p className='options'>juros sobre investimento</p></Nav.Link>
+              <Nav.Link onClick={showHouse}> <p className='options'>juros sobre imóvel</p></Nav.Link>
             </Nav>
                  
                 </Navbar.Collapse>
@@ -112,11 +112,7 @@ const [formulary, setFormulary] = useState(false);
         {page === 'start' && <div >
           <article>
             <h1>Calculadora de juros compostos</h1>
-            <h3>o que são juros compostos?</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo facilis harum magnam necessitatibus, nisi vero soluta corrupti atque aperiam dignissimos eaque dolore iusto ratione ad delectus architecto voluptate iure earum.</p>
-            <h3>Para que saber quanto estou pagando de juros?</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rerum veniam mollitia rem voluptas voluptatum asperiores excepturi dolore velit animi! Nesciunt obcaecati animi sint neque sequi, nihil suscipit? Vero, sit?</p>
-              <p>Para começar, escolha uma das opções de investimento abaixo:</p>
+           <p>Calcule aqui suas aplicações financeiras ou financiamentos a longo prazo.</p>
           </article>
             <div className='cards'>
               <div>

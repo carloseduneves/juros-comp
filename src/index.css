@@ -115,3 +115,18 @@ main{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
   border: 1px solid rgb(107, 107, 254);
 }
+
+.options{
+  padding: 5px;
+  border-radius: 10px;
+}
+.options:hover{
+    
+    background-color: rgb(223, 253, 251);
+    transition: 1s; 
+}
+.navbar{
+  background-color: rgb(202, 224, 242);
+  color: #fff;
+}
+
