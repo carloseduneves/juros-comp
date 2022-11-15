@@ -15,13 +15,15 @@ import JurosInvest from './components/JurosInvest.js';
 
 //header components
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
+//import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 //import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+//placeholders 
+const placeholder = ['digite o valor do capital', 'tempo para pagar', 'taxa de juros'];
 //control options pages
 const stages = [
   {stage: 1, name: 'start'},
@@ -35,21 +37,32 @@ const [formulary, setFormulary] = useState(false);
   const [Value, setValue] = useState(0);
     const [time, setTime] = useState(0);
     const [interest, setInterest] = useState(0);
+
 //values returned from function 
     const [ calcInterest, setCalcInterest] = useState(0);
     const [allInterest, setAllInterest] = useState(0);
+//reset the values
+  const resetValues = () =>{
+    setValue('');
+    setTime('');
+    setInterest('');
+    setCalcInterest(0);
+  }
 //btn from cards
     const showHouse = () => {
       setFormulary(true);
       setPage(stages[1].name);
+      resetValues();
     };
     const showCar = () => {
       setFormulary(true);
       setPage(stages[2].name);
+      resetValues();
     };
     const showMoney = () => {
       setFormulary(true);
       setPage(stages[3].name);
+      resetValues();
     };
 
 
@@ -57,16 +70,13 @@ const [formulary, setFormulary] = useState(false);
     const calc = (e) => {
         e.preventDefault();
 
-        let calculate = (Value * (1 + interest / 100) * time)
+        let calculate = (Value * (1 + interest / 100) ** time)
         setCalcInterest(calculate);
        
         let totalInterest = (calculate - Value);
 
         setAllInterest(totalInterest);
-        console.log(allInterest);
-        console.log(calculate);
-        console.log(totalInterest);
-  
+
         return;
     }
     //return to home
@@ -153,13 +163,22 @@ const [formulary, setFormulary] = useState(false);
           {page === 'money' && calcInterest > 0 && (<JurosInvest calcInterest={calcInterest} allInterest={allInterest} />)}
         </div>
         {formulary === true &&  <form className='form ' onSubmit={calc}>
-        {page === 'house' && <h1>Investimento imobiliário</h1>}
+              {page === 'house' && <h1>Investimento imobiliário</h1>}
               {page === 'car' && <h1>Investimento em automóveis</h1>}
               {page === 'money' && <h1>Investimento Financeiro</h1>}
             <p>digite as informações abaixo:</p>
-            <input type="text" name="valor"  placeholder="valor do capital" onChange={(e) => setValue(e.target.value)}/>
-            <input type="text" name="tempo" placeholder="tempo para pagar" onChange={(e) => setTime(e.target.value)}/>
-            <input type="text" name="valor" placeholder="taxa de juros a.m." onChange={(e) => setInterest(e.target.value)}/>
+            <label>
+              <h3>valor</h3>
+              <input type="text" name="valor"  placeholder={placeholder[0]} onChange={(e) => setValue(e.target.value)} value={Value}/>
+            </label>
+            <label>
+              <h3>tempo</h3>
+              <input type="text" name="tempo" placeholder={placeholder[1]} onChange={(e) => setTime(e.target.value)} value={time}/>
+            </label>
+            <label>
+              <h3>taxa de juros a.a</h3>
+              <input type="text" name="juros" placeholder={placeholder[2]} onChange={(e) => setInterest(e.target.value)} value={interest}/>
+            </label>
             <button className="btnForm" >calcular</button>
         </form>}
 
