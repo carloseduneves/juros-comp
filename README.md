@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Calculadora de juros compostos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Site funcionando:  [Calculadora de Juros](https://juros-comp.vercel.app/)
 
-## Available Scripts
+## Sobre o Projeto
 
-In the project directory, you can run:
+Esse projeto é uma aplicação Front-end que simula uma calculadora de juros compostos de financiamentos ou aplicações financiras a longo prazo.
+A aplicação consiste em um site onde o usuário tem as opções de calcular os juros compostos de um investimento financeiro ou financiamento de imóveis e automóveis.
 
-### `npm start`
+Esse projeto teve como propósito colocaar em prática alguns conceitos aprendidos com algumas tecnologias Front-end.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias usadas no desenvolvimento
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+ <img height="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> HTML5- Usada para inserção do conteúdo da página.
+  
+  <img height="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /> CSS3 - Usada para a estilização dos componentes.
+                             
+       
+  <img height="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> Javascript - Usada para a interação e funcionamento  da página.
+  
+  
+  <img height="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" /> React - Framework usado para otimização da experiência do usuário e garantir a alta qualidade e eficiência da aplicação.
+  
+  
+  
+   <img  height="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" /> Bootstrap - Usado para estilizar e deixar alguns componentes mais responsivos e dinâmicos.
+   
+   ## Layout de apresentação
+   
+   ### Desktop
+   
+   ![Desktop](https://github.com/carloseduneves/juros-comp/blob/master/public/layout-page-pc.jpg)
+   
+   ### Mobile
+   
+   ![Mobile](https://github.com/carloseduneves/juros-comp/blob/master/public/mobile.jpg)
+   
+   ## Como executar o projeto 
+   
+   Para executar o projeto no desktop, é necessário ter instalado o NODE-JS na sua máquina.
+   
+   ``` bash
+   #comandos para abrir a pasta do projeto e executá-lo no browser
+   
+   cd juros-comp
+   
+    npm start 
+  ```
+    
+  # Autor do projeto
+  Carlos Eduardo Pereira Neves
+  
+  [Meu LinkedIn](https://www.linkedin.com/in/carlos-eduardo-pereira-neves-tecnologia/)
+   
+   
+   
+   
+          
+          
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
