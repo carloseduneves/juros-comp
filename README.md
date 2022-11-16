@@ -7,8 +7,6 @@ Site funcionando:  [Calculadora de Juros](https://juros-comp.vercel.app/)
 Esse projeto é uma aplicação Front-end que simula uma calculadora de juros compostos de financiamentos ou aplicações financiras a longo prazo.
 A aplicação consiste em um site onde o usuário tem as opções de calcular os juros compostos de um investimento financeiro ou financiamento de imóveis e automóveis.
 
-Esse projeto teve como propósito colocaar em prática alguns conceitos aprendidos com algumas tecnologias Front-end.
-
 ## Tecnologias usadas no desenvolvimento
 
 
